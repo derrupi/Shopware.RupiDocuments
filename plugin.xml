@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label lang="de">Rupi Documents</label>
+    <label lang="en">Rupi Documents</label>
+
+    <version>0.0.1</version>
+    <copyright>(c) by ruprecht.cc</copyright>
+    <license>MIT</license>
+    <link>https://ruprecht.cc</link>
+    <author>Andreas Ruprecht</author>
+    <compatibility minVersion="5.3.0"/>
+
+    <changelog version="0.0.1">
+        <changes lang="de">Erstveröffentlichung</changes>
+        <changes lang="en">First release</changes>
+    </changelog>
+    
+    <description lang="de">
+        <![CDATA[
+        <p>Versendet die Rechnungsdokumente als Mail an die angegebene Adresse</p></br>
+        ]]>
+    </description>
+</plugin>
