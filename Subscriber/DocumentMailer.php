@@ -84,7 +84,11 @@ class DocumentMailer implements SubscriberInterface
     $mail->From = Shopware()->Config()->Mail;
     $mail->FromName = Shopware()->Config()->Mail;
     $mail->ClearAddresses();
-    $mail->AddAddress($pluginConfig['recipient'], '');
+
+    $recipient = explode(";", $pluginConfig['recipient']);
+    foreach($recipient as $r){
+      $mail->AddAddress($r, '');
+    }
     $attachment = new \Zend_Mime_Part($content);
     $attachment->type = 'application/pdf';
     $attachment->disposition = \Zend_Mime::DISPOSITION_ATTACHMENT;

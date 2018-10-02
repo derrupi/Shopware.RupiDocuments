@@ -4,18 +4,21 @@
     <label lang="de">Rupi Documents</label>
     <label lang="en">Rupi Documents</label>
 
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <copyright>(c) by ruprecht.cc</copyright>
     <license>MIT</license>
     <link>https://ruprecht.cc</link>
     <author>Andreas Ruprecht</author>
     <compatibility minVersion="5.3.0"/>
 
+    <changelog version="0.0.2">
+        <changes lang="de">E-Mail kann ab sofort an mehrere Empfänger versendet werden.</changes>
+    </changelog>
+
     <changelog version="0.0.1">
         <changes lang="de">Erstveröffentlichung</changes>
-        <changes lang="en">First release</changes>
     </changelog>
-    
+
     <description lang="de">
         <![CDATA[
         <p>Versendet die Rechnungsdokumente als Mail an die angegebene Adresse</p></br>

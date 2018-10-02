@@ -5,17 +5,15 @@
         <element required="true" type="text" scope="locale">
             <name>countries</name>
             <label lang="de">Länder mit Dokumentenversand</label>
-            <label lang="en">Countries with invoice delivery</label>
             <value></value>
-            <description lang="de">Bitte Länder mit ; trennen. </description>
+            <description lang="de">Bitte Länder durch ; trennen. </description>
             <description lang="en"></description>
         </element>
         <element required="true" type="text" scope="locale">
             <name>recipient</name>
             <label lang="de">Empfänger der Dokumente</label>
-            <label lang="en">Recipient of documents</label>
             <value></value>
-            <description lang="de">Derzeit nur ein Empfänger möglich</description>
+            <description lang="de">Mehrere Empfänger bitte durch ; trennen.</description>
             <description lang="en"></description>
         </element>
         <element type="combo">
