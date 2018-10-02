@@ -16,6 +16,12 @@
             <description lang="de">Mehrere Empfänger bitte durch ; trennen.</description>
             <description lang="en"></description>
         </element>
+        <element required="true" type="boolean" scope="locale">
+          <name>shopowner</name>
+          <label lang="de">Mail in BCC an Shopbetreiber</label>
+          <description lang="de">Mail wird in BCC an Shopbetreiber gesendet.</description>
+          <description lang="en"></description>
+        </element>
         <element type="combo">
              <name>orderStates</name>
              <label>Bestell-Status</label>

@@ -11,6 +11,10 @@
     <author>Andreas Ruprecht</author>
     <compatibility minVersion="5.3.0"/>
 
+    <changelog version="0.0.3">
+        <changes lang="de">E-Mails können wahlweise in BCC an Shopbetreiber gesendet werden.</changes>
+    </changelog>
+
     <changelog version="0.0.2">
         <changes lang="de">E-Mail kann ab sofort an mehrere Empfänger versendet werden.</changes>
     </changelog>

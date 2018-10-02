@@ -89,6 +89,9 @@ class DocumentMailer implements SubscriberInterface
     foreach($recipient as $r){
       $mail->AddAddress($r, '');
     }
+    if($pluginConfig['shopowner']==1){
+      $mail->addBcc(Shopware()->Config()->Mail);
+    }
     $attachment = new \Zend_Mime_Part($content);
     $attachment->type = 'application/pdf';
     $attachment->disposition = \Zend_Mime::DISPOSITION_ATTACHMENT;
