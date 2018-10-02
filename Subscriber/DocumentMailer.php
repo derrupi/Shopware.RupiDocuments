@@ -60,7 +60,7 @@ class DocumentMailer implements SubscriberInterface
                 "SELECT * FROM s_order_attributes WHERE orderID = ? ORDER BY ID DESC LIMIT 1",
                 array($orderId));
               if(!$query){
-                Shopware()->Db()->query("INSERT INTO s_order_attributes (orderId, invoice_send) VALUES ('{$orderId}', 1)");
+                Shopware()->Db()->query("INSERT INTO s_order_attributes (orderId, invoice_send) VALUES ('{$orderId}', '1')");
               } else {
                 Shopware()->Db()->query("UPDATE s_order_attributes SET invoice_send = 1 WHERE orderId = '{$orderId}'");
               }
