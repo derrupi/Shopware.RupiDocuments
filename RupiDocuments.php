@@ -19,40 +19,16 @@ class RupiDocuments extends Plugin
 
       $content = "{sOrderNumber}";
 
-      $stmt = $dbConn->query("INSERT INTO s_core_config_mails
-        (name,
-        frommail,
-        fromname,
-        subject,
-        content,
-        ishtml,
-        mailtype,
-        dirty)
-        VALUES
-        ('RupiDocuments',
-          '{config name=mail}',
-          '{config name=shopName}',
-          'Rechnung zu Bestellung',
-          '',
-          0,
-          1,
-          1)");
+      $stmt = $dbConn->query("INSERT INTO s_core_config_mails (name, frommail, fromname, subject, content, ishtml, mailtype, dirty)
+        VALUES ('RupiDocuments', '{config name=mail}', '{config name=shopName}', 'Rechnung zu Bestellung', '', 0, 1, 1)");
 
       $service = $this->container->get('shopware_attribute.crud_service');
       $service->update('s_order_attributes', 'invoice_send', 'boolean', [
             'label' => 'Rechnung versendet?',
             'supportText' => 'Wenn die Checkbox aktiv ist, wurde die Rechnungskopie versendet',
-
-            //user has the opportunity to translate the attribute field for each shop
             'translatable' => false,
-
-            //attribute will be displayed in the backend module
             'displayInBackend' => true,
-
-            //numeric position for the backend view, sorted ascending
             'position' => 100,
-
-            //user can modify the attribute in the free text field module
             'custom' => false
         ]);
 
